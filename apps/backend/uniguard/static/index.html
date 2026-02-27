@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UniGuard AI</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="side">
+      <div class="brand">
+        <div class="brand-title">UniGuard AI</div>
+        <div class="brand-sub">Эдвайзер панелі • Week 12/15</div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn" data-route="dashboard" onclick="go('dashboard')">
+          Басты панель
+        </button>
+        <button class="nav-btn" data-route="groups" onclick="go('groups')">
+          Топтар
+        </button>
+        <button class="nav-btn" data-route="advisor" onclick="go('advisor')">
+          Advisor Heatmap
+        </button>
+        <button class="nav-btn" data-route="student" onclick="go('student')">
+          Студент профилі
+        </button>
+      </nav>
+
+      <div class="side-footer">
+        <div class="pill">Local Web App</div>
+        <div class="pill">SQLite</div>
+        <div class="pill">FastAPI</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="page-title" id="pageTitle">Басты панель</div>
+          <div class="page-sub" id="pageSub">Қысқаша мониторинг</div>
+        </div>
+
+        <div class="topbar-right">
+          <input id="globalSearch" class="input" placeholder="Іздеу: S0001 немесе топ..." />
+          <button class="btn" id="globalGo">Өту</button>
+        </div>
+      </header>
+
+      <section id="app" class="content"></section>
+    </main>
+  </div>
+
+  <script type="module" src="/router.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
