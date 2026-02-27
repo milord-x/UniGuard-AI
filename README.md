@@ -23,11 +23,11 @@ The system operates as a **local web application** running entirely in the brows
 Local Web App Model:
 
 Browser UI  
-↓  
+     ↓  
 FastAPI Backend  
-↓  
+     ↓  
 Risk Engine  
-↓  
+     ↓  
 SQLite Database
 
 Modules:
@@ -81,4 +81,4 @@ set -x PYTHONPATH apps/backend
 uvicorn uniguard.main:app --reload
 
 Open: http://127.0.0.1:8000
----
+
